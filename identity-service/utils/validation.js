@@ -1,6 +1,6 @@
 const joi = require('joi');
 
-const validateRegistartion=(data)=>{
+const validateRegistration=(data)=>{
   const schema = joi.object({
     username: joi.string().alphanum().min(3).max(30).required(),
     password: joi.string().pattern(new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$')).required(),
@@ -10,4 +10,4 @@ const validateRegistartion=(data)=>{
   return schema.validate(data);
 }
 
-module.exports = validateRegistartion;
+module.exports = { validateRegistration };
