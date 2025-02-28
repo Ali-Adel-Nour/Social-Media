@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "argon2": "^0.41.1",
+    "compresion": "^1.7.11",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
@@ -27,6 +28,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.10.1",
     "rate-limit-redis": "^4.2.0",
+    "rate-limiter-flexible": "^5.0.5",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0"
   }
