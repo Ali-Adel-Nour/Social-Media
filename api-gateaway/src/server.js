@@ -61,7 +61,7 @@ const authLimiter = rateLimit({
 });
 
 
-console.log('IDENTITY_SERVICE_URL:', process.env.IDENTITY_SERVICE_URL);
+
 const proxyOptions = {
   proxyReqPathResolver: (req) => {
     return req.originalUrl.replace(/^\/v1/, "/api");
